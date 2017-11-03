@@ -14,6 +14,9 @@
       ol ,li {
         list-style: none;
       }
+      a {
+        text-decoration: none;
+      }
       .icon {
         width: 1em; height: 1em;
         vertical-align: -0.15em;
@@ -92,11 +95,11 @@
         padding-bottom: 5px;
         border-bottom: 2px solid #fff;
       }
-      .skill ol {
+      ol {
         margin-left: 10px;
         border-left: 2px solid red;
       }
-      .skill ol>li::before{
+      ol>li::before{
         content: '';
         display: block;
         margin-bottom: -39px;
@@ -106,12 +109,18 @@
         background: red;
         border-radius: 50%;
       }
-      .skill ol>li .item {
+      ol>li .item {
         margin-left: 15px;
       }
-      .skill ol>li .item p{
+      ol>li .item p{
         margin-left: 20px;
         padding-right: 20px;
+      }
+      ol>li .item h3>span {
+        border: 1px solid red;
+        padding: 8px;
+        margin-left: 10px;
+        border-radius: 5px;
       }
       .right {
         width: 70%;
@@ -122,6 +131,10 @@
       .right .profile p {
         margin-left: 40px;
         margin-right: 50px;
+      }
+      /*movie*/
+      #movie {
+        margin-left: 20px;
       }
     </style>
 </head>
@@ -244,14 +257,40 @@
       <div class="profile">
         <p>吴齐 | 男 | 1995<p>
         <p>湖北工程学院 | 本科</p>
-        <p>Github: https://github.com/joinmouse</p>
-        <p>博客：http://www.jianshu.com/u/46be9e6b1e89</p>
+        <p>Github：<a href="https://github.com/joinmouse">https://github.com/joinmouse</a></p>
+        <p>博客：<a href="http://www.jianshu.com/u/46be9e6b1e89">http://www.jianshu.com/u/46be9e6b1e89</a></p>
         <p>简介：我是一个热爱前端和IT的前端工程师,具有很强的学习能力和技术敏感度，乐于分享和学习，目前正在寻找前端工程师的岗位
            若贵司正好有这方面的需要，快招我到碗里来吧。
         </p>
       </div>
-      <div class="project"></div>
-      <div class="other"></div>
+      <div class="details">
+        <span>
+          <svg class="icon icon-flight" aria-hidden="true">
+            <use xlink:href="#icon-flight"></use>
+          </svg>
+        </span>
+        <h4>Profile:基本信息</h4>
+      </div>
+      <div class="project">
+        <ol>
+          <li>
+            <div class="item">
+                <h3>
+                  movie.移动端豆瓣电影
+                  <span><a href="https://github.com/joinmouse/movie-douban">源码地址</a></span>
+                </h3>
+                <p>基于豆瓣公开的基础API，<br>
+                    展示电影排行榜Top250、北美最新电影票房榜、搜索电影<br>
+                    <b>技术栈：</b>HTML5/CSS3+jQuery+webpack
+                </p>
+                <div id="movie">
+                  <h3>Demo:</h3>
+                  <img src="http://oy0zn7gpi.bkt.clouddn.com/1508340479.png" alt="demo">
+                </div>
+              </div>
+          </li>
+        </ol>
+      </div>
     </div>
   </main>
 </body>

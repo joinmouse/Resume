@@ -99,6 +99,9 @@
         margin-left: 10px;
         border-left: 2px solid red;
       }
+      ol>li {
+        margin-bottom: 20px;
+      }
       ol>li::before{
         content: '';
         display: block;
@@ -116,11 +119,11 @@
         margin-left: 20px;
         padding-right: 20px;
       }
-      ol>li .item h3>span {
+      ol>li .item h4>span {
         border: 1px solid red;
-        padding: 8px;
+        padding: 5px;
         margin-left: 10px;
-        border-radius: 5px;
+        border-radius: 3px;
       }
       .right {
         width: 70%;
@@ -133,8 +136,13 @@
         margin-right: 50px;
       }
       /*movie*/
-      #movie {
+      #movie,#music{
         margin-left: 20px;
+      }
+      #movie img ,
+      #music img {
+        height: 100px;
+        width: 100px;
       }
     </style>
 </head>
@@ -269,25 +277,75 @@
             <use xlink:href="#icon-flight"></use>
           </svg>
         </span>
-        <h4>Profile:基本信息</h4>
+        <h4>Project: 项目经验</h4>
       </div>
       <div class="project">
         <ol>
           <li>
             <div class="item">
-                <h3>
-                  movie.移动端豆瓣电影
-                  <span><a href="https://github.com/joinmouse/movie-douban">源码地址</a></span>
-                </h3>
-                <p>基于豆瓣公开的基础API，<br>
-                    展示电影排行榜Top250、北美最新电影票房榜、搜索电影<br>
-                    <b>技术栈：</b>HTML5/CSS3+jQuery+webpack
-                </p>
-                <div id="movie">
-                  <h3>Demo:</h3>
-                  <img src="http://oy0zn7gpi.bkt.clouddn.com/1508340479.png" alt="demo">
-                </div>
+              <h4>
+                movie.移动端豆瓣电影
+                <span><a href="https://github.com/joinmouse/movie-douban">源码地址</a></span>
+              </h4>
+              <p>基于豆瓣公开的基础API，<br>
+                  展示电影排行榜Top250、北美最新电影票房榜、搜索电影<br>
+                  <b>技术栈：</b>HTML5/CSS3+jQuery+webpack
+              </p>
+              <div id="music">
+                <h3>Demo:</h3>
+                <img src="http://oy0zn7gpi.bkt.clouddn.com/1508340479.png" alt="demo">
               </div>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <h4>
+                music.移动端网易云音乐
+                <span><a href="https://github.com/joinmouse/movie-douban">源码地址</a></span>
+              </h4>
+              <p>仿网易云移动端播放器<br>
+                 实现的歌曲播放(暂停、歌词滚动等)、热门歌曲的获取和展示<br>
+                  <b>技术栈：</b>HTML5/CSS3+jQuery+glup
+              </p>
+              <div id="movie">
+                <h3>Demo:</h3>
+                <img src="http://oxtlq392m.bkt.clouddn.com/music.png" alt="demo">
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <h4>
+                weather.天气预报
+                <span><a href="https://github.com/joinmouse/weather">源码地址</a></span>
+              </h4>
+              <p>使用Ajax异步的获取数据，用户输入需要查询的城市<br>
+                 即可以动态的获取该城市的天气信息，并事实的显示<br>
+                 显示气温、风力和未来一周的天气情况<br>
+                 注意：获取天气的API为免费的api,输入城市仅仅支持拼音，请注意！<br>
+                  <b>技术栈：</b>HTML5/CSS3+jQuery+glup
+              </p>
+              <h3>Demo:<a href="http://www.guohezu.me/weather/index.html">http://www.guohezu.me/weather/index.html</a></h3>  
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <h4>
+                carousel.轮播的不同实现方式
+                <span><a href="https://github.com/joinmouse/carousel-demo">源码地址</a></span>
+              </h4>
+              <p>CSS3实现:<a href="http://www.guohezu.me/carousel-demo/carousel-css3.html">Demo</a></p>
+              <p>jQuery实现:<a href="http://www.guohezu.me/carousel-demo/carousel-slide-jquery.html">Demo</a></p>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <h4>
+                3D.CSS3实现一个3D效果
+                <span><a href="https://github.com/joinmouse/Page/tree/master/CSS3">源码地址</a></span>
+              </h4>
+              <p>预览地址:<a href="http://www.guohezu.me/Page/CSS3/3D.html">Demo</a></p>
+            </div>
           </li>
         </ol>
       </div>

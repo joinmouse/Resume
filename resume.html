@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="//at.alicdn.com/t/font_462992_vwanx3n4cv2w3ik9.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margig: 0;
+        padding: 0
+      }
+      ol ,li {
+        list-style: none;
+      }
+      .icon {
+        width: 1em; height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+      .icon-flight {
+        fill: red;
+        width: 20px;
+        height: 20px;
+      }
+      .icon-qq,.icon-email,.icon-tel {
+        fill: #2BA8E2;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      main {
+        border: 1px solid #000;
+        display: flex;
+        margin: 0 auto;
+      }
+      /*left css*/
+      .left {
+        width: 30%;
+        height: 100%;
+        border-right: 1px solid #000;
+        background: url(http://oytjrodky.bkt.clouddn.com/blue.jpg);
+        background-size: cover;
+      }
+      .left .me {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid red;
+      }
+      .left .me > img {
+        height: 140px;
+        width: 120px;
+        margin-top: 100px;
+      }
+      .left .connect {
+        border: 1px solid green;
+      }
+      /*details组件,可复用*/
+      .details {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 5px;
+      }
+      .details span {
+        margin-right: 10px;
+      }
+      .details h4 {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #fff;
+      }
+      .connect p {
+        margin-left: 15px;
+      }
+      .left .skill {
+        border: 1px solid blue;
+      }
+      .skill .details {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 5px;
+      }
+      .skill .details span {
+        margin-right: 10px;
+      }
+      .skill .details h4 {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #fff;
+      }
+      .skill ol {
+        margin-left: 10px;
+        border-left: 2px solid red;
+      }
+      .skill ol>li::before{
+        content: '';
+        display: block;
+        margin-bottom: -39px;
+        margin-left: -5px;
+        height: 10px;
+        width: 10px;
+        background: red;
+        border-radius: 50%;
+      }
+      .skill ol>li .item {
+        margin-left: 15px;
+      }
+      .skill ol>li .item p{
+        margin-left: 20px;
+        padding-right: 20px;
+      }
+      .right {
+        width: 70%;
+        height: 100%;
+        background: white;
+        margin: 0 auto;
+      }
+      .right .profile p {
+        margin-left: 40px;
+        margin-right: 50px;
+      }
+    </style>
+</head>
+<body>
+  <main>
+    <div class="left">
+      <div class="me">
+        <img src="http://oytjrodky.bkt.clouddn.com/me.jpg" alt="me">
+        <h4>吴齐</h4>
+        <h3>应聘前端工程师</h3>
+      </div>
+      <div class="connect">
+        <div class="details">
+          <span>
+            <svg class="icon icon-flight" aria-hidden="true">
+                <use xlink:href="#icon-flight"></use>
+            </svg>
+          </span>
+          <h4>Details: 联系方式</h4>
+        </div>
+        <p class="item">
+          <span>
+            <svg class="icon icon-tel" aria-hidden="true">
+              <use xlink:href="#icon-tel"></use>
+            </svg>
+          </span>
+          <b>Tel:</b> 17317588592
+        </p>
+        <p class="item">
+          <span>
+            <svg class="icon icon-email" aria-hidden="true">
+              <use xlink:href="#icon-email"></use>
+            </svg>
+          </span>
+          <b>Email:</b> 908380434@qq.com
+        </p>
+        <p class="item">
+          <span>
+            <svg class="icon icon-qq" aria-hidden="true">
+              <use xlink:href="#icon-qq"></use>
+            </svg>
+          </span>
+          <b>QQ:</b> 908380434
+        </p> 
+      </div>
+      <div class="skill">
+        <div class="details">
+          <span>
+            <svg class="icon icon-flight" aria-hidden="true">
+                <use xlink:href="#icon-flight"></use>
+            </svg>
+          </span>
+          <h4>SKill: 技能清单</h4>
+        </div>
+        <ol>
+          <li>
+            <div class="item">
+              <h4>1、HTML/CSS</h4>
+              <p>
+                熟悉W3C规范、掌握HTML5/CSS3新特性，包括但不限于动画、3D转换、flex布局等
+                能够编写语义化的HTML，模块化的CSS，了解LESS/SASS等CSS预处理;完成较为复杂的布局
+                像素级还原设计稿；掌握动态REM、响应式布局，能够很好的完成不同移动端设备的适配
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <h4>2、JavaScript</h4>
+              <p>
+                掌握一些重要的基础概念：如原型、原型链、闭包、面向对象、异步请求等等
+                掌握DOM操作、事件，Ajax请求，以及ES6的语法特性，并在实际项目中使用
+                使用模块化、面向对象的方式编写代码，以及web组件的开发
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <h4>3、jQuery</h4>
+              <p>熟悉jQuery的应用，包括但不限于jQuery选择器、DOM操作、$.ajax请求等，有项目运用经验</p>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <h4>4、Vue</h4>
+              <p>解Vue的基本原理，并有开发经验</p>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <h4>5、Webpack/Gulp</h4>
+              <p>了解Webpack/Gulp的操作流程，有实际的使用经验<p>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <h4>6、后端</h4>
+              <p>了解web服务器的基本知识，对node.js有一些的了解，http请求协议</p>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <h4>7、调试</h4>
+              <p>可以在chrome等浏览器下的调试bug，在没有后端的情况下可以独立虚拟出mock数据(JSON)或利用开源API，
+                  完成对后端数据的请求并渲染到前端页面
+              </p>
+            </div>
+          </li> 
+        </ol>
+      </div>
+    </div>
+    <div class="right">
+      <div class="details">
+        <span>
+          <svg class="icon icon-flight" aria-hidden="true">
+            <use xlink:href="#icon-flight"></use>
+          </svg>
+        </span>
+        <h4>Profile:基本信息</h4>
+      </div>
+      <div class="profile">
+        <p>吴齐 | 男 | 1995<p>
+        <p>湖北工程学院 | 本科</p>
+        <p>Github: https://github.com/joinmouse</p>
+        <p>博客：http://www.jianshu.com/u/46be9e6b1e89</p>
+        <p>简介：我是一个热爱前端和IT的前端工程师,具有很强的学习能力和技术敏感度，乐于分享和学习，目前正在寻找前端工程师的岗位
+           若贵司正好有这方面的需要，快招我到碗里来吧。
+        </p>
+      </div>
+      <div class="project"></div>
+      <div class="other"></div>
+    </div>
+  </main>
+</body>
+</html>
